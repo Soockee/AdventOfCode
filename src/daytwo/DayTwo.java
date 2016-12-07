@@ -23,13 +23,10 @@ public class DayTwo {
         }
     }
     public void down(){
-        //System.out.println("Move Down from::"+curr);
         if (curr<6) {
             curr += 3;
         }
-        //System.out.println(" To::"+curr);
     }
-
     public void right(){
         if (curr != 2 && curr != 5 && curr != 8){
             curr +=1;
@@ -72,11 +69,7 @@ public class DayTwo {
             moves = inputLine.split("");
 
             for (int i = 0; i<moves.length;i++){
-                //System.out.print("Moves from:" + keypad[curr]);
-                move(moves[i].charAt(0));
-               // System.out.println("to : " + keypad[curr]);
-
-
+                move(moves[i].charAt(0))
             }
             System.out.println(keypad[curr]);
         }
